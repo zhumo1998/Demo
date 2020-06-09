@@ -1,0 +1,22 @@
+
+server:
+  #端口号
+  port: 8989
+  #项目名
+  servlet:
+    context-path: /demo1
+spring:
+  #数据库连接源
+  datasource:
+    url: jdbc:mysql://localhost:3306/zyp?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+
+
+mybatis:
+  #注册Mapper文件
+  mapper-locations: classpath:mappers/*Mapper.xml
+  #给实体类起别名
+  type-aliases-package: com.yj.entity
+
