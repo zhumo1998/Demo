@@ -13,7 +13,6 @@ import java.util.List;
 class DemoApplicationTests {
     @Autowired
     private AdminDAO adminDAO;
-
     @Test
     void test1() {
         Admin admin = adminDAO.selectOne(1);
@@ -26,5 +25,4 @@ class DemoApplicationTests {
             System.out.println(admin);
         }
     }
-
 }

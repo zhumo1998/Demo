@@ -14,9 +14,17 @@ spring:
     password: 123456
 
 
-mybatis:
-  #注册Mapper文件
-  mapper-locations: classpath:mappers/*Mapper.xml
-  #给实体类起别名
-  type-aliases-package: com.yj.entity
+#mybatis:
+#  #注册Mapper文件
+#  mapper-locations: classpath:mappers/*Mapper.xml
+#  #给实体类起别名
+#  type-aliases-package: com.yj.entity
 
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    schema: classpath:db/schema-h2.sql
+#    data: classpath:db/data-h2.sql
+#    url: jdbc:h2:mem:test
+#    username: root
+#    password: test
