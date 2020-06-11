@@ -1,7 +1,9 @@
-package com.yj.blog.service;
+package com.yj.service;
 
-import com.yj.blog.entity.Admin;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.yj.entity.Admin;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +14,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-06-11
  */
 public interface AdminService extends IService<Admin> {
-
+    List<Admin> selectAllByName(String username);
+    void insert(Admin admin);
 }

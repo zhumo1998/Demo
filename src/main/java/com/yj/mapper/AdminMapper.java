@@ -1,7 +1,8 @@
-package com.yj.blog.mapper;
+package com.yj.mapper;
 
-import com.yj.blog.entity.Admin;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.yj.entity.Admin;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author zyp
  * @since 2020-06-11
  */
+@Repository
 public interface AdminMapper extends BaseMapper<Admin> {
 
 }

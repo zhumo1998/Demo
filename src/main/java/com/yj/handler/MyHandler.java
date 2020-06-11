@@ -14,9 +14,9 @@ public class MyHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         log.info("更新插入时间");
         //修改创建时间
-        this.setFieldValByName("createTime",new Date(),metaObject);
+        this.setFieldValByName("gmtCreate",new Date(),metaObject);
 //        修改修改时间
-        this.setFieldValByName("updateTime",new Date(),metaObject);
+        this.setFieldValByName("gmtModified",new Date(),metaObject);
     }
 
     //执行修改时的更新策略
@@ -24,7 +24,7 @@ public class MyHandler implements MetaObjectHandler {
     public void updateFill(MetaObject metaObject) {
         log.info("更新修改时间");
 //        修改修改时间
-        this.setFieldValByName("updateTime",new Date(),metaObject);
+        this.setFieldValByName("gmtModified",new Date(),metaObject);
 
     }
 }
